@@ -24,7 +24,7 @@ data$Date <- as.Date(strptime(data$Date, format="%d/%m/%Y"))
 data <- subset(data, Date==as.Date("2007-02-01")|Date==as.Date("2007-02-02"))
 
 # Create plot to png device
-png("plot1.png")
+png("plot1.png", bg="transparent")
 hist(data$Global_active_power,
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",

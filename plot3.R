@@ -30,7 +30,7 @@ data$datetime <- as.POSIXct(strptime(paste(data$Date, data$Time), format="%Y-%m-
 Sys.setlocale("LC_TIME", "US")
 
 # Create plot to png device
-png("plot3.png")
+png("plot3.png", bg="transparent")
 plot(data$datetime, data$Sub_metering_1,
      type = "l",
      xlab = "",

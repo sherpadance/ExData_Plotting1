@@ -30,7 +30,7 @@ data$datetime <- as.POSIXct(strptime(paste(data$Date, data$Time), format="%Y-%m-
 Sys.setlocale("LC_TIME", "US")
 
 # Create plot to png device
-png("plot2.png")
+png("plot2.png", bg="transparent")
 plot(data$datetime, data$Global_active_power, 
      type="l", 
      xlab="", 
